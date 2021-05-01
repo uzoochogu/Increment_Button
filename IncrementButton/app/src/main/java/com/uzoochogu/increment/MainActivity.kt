@@ -1,4 +1,7 @@
-package com.example.increment_button
+package com.uzoochogu.increment
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
 
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +15,11 @@ class MainActivity : AppCompatActivity() {
 
         var counter = 0
 
+        increment_button.setOnClickListener {
+            counter++
+
+            textview_increment.text = counter.toSpring()
+        }
 
 
     }
